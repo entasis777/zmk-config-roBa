@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //エンコーダのスクロール量を定義
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+//#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 // OS設定を日本語キーボードのまま使用するための変換定義
 #define JP_DQUOTE       AT                // "
@@ -124,8 +124,8 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt 4 LS(CAPSLOCK)      &lt_to_layer_0 3 ENTER  &lt 1 SPACE                             &kp DEL
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
-            //sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            //sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         FUNCTION {
