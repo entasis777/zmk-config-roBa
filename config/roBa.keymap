@@ -4,11 +4,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //エンコーダのスクロール量を定義
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 // OS設定を日本語キーボードのまま使用するための変換定義
-
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -95,7 +93,6 @@
     };
 
     // スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
-
     behaviors {
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
@@ -125,8 +122,8 @@
             bindings = <
 &kp Q  &kp W         &kp E         &kp R      &kp T                                                            &kp Y          &kp U  &lt 5 I    &kp O    &kp P
 &kp A  &kp S         &kp D         &kp F      &kp G                 &kp LS(LG(S))      &kp INS                 &kp H          &kp J  &kp K      &kp L    &kp ENTER
-&kp Z  &kp X         &kp C         &kp V      &kp B                 &to 2              &kp DEL                 &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&to 8  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 5 JP_HANZEN  &lt_to_layer_0 3 SPACE  &kp BACKSPACE                             &to 1
+&kp Z  &kp X         &kp C         &kp V      &kp B                 &mo 2              &kp DEL                 &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mo 8  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 5 JP_HANZEN  &lt_to_layer_0 3 SPACE  &kp BACKSPACE                             &mo 1
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
