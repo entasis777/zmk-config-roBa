@@ -190,7 +190,7 @@
         SYMBOL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &kp JP_BACKQUOTE  &kp JP_TILDE  &kp BACKSLASH  &kp JP_YEN  &kp JP_PIPE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp SEMICOLON  &kp JP_COLON  &kp JP_CARET  &kp JP_UNDERSCORE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp AT  &kp SEMICOLON  &kp JP_COLON  &kp JP_CARET  &kp JP_UNDERSCORE
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
