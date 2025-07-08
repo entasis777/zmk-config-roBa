@@ -67,13 +67,13 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
+//        muhennkann {
+//            bindings = <&to_layer_0 INT_MUHENKAN>;
+//            key-positions = <11 10>;
+//        };
+//
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp MINUS>;
             key-positions = <20 21>;
         };
 
@@ -120,10 +120,10 @@
 
         default_layer {
             bindings = <
-&lt_to_layer_0 6 Q  &kp W         &kp E         &kp R      &kp T                                                            &kp Y          &kp U  &lt 5 I    &kp O    &kp P
-&kp A  &kp S         &kp D         &kp F      &kp G                 &kp LS(LG(S))      &kp INS                 &kp H          &kp J  &kp K      &kp L    &kp ENTER
+&kp Q  &kp W         &kp E         &kp R      &kp T                                                            &kp Y          &kp U  &lt 5 I    &kp O    &kp P
+&lt_to_layer_0 4 A  &lt_to_layer_0 3 S  &lt_to_layer_0 1 D  &lt_to_layer_0 2 F  &lt_to_layer_0 7 G  &kp LS(LG(S))   &kp INS  &lt_to_layer_0 7 H  &lt_to_layer_0 2 J  &lt_to_layer_0 1 K  &lt_to_layer_0 3  L  &lt_to_layer_0 4 ENTER
 &kp Z  &kp X         &kp C         &kp V      &kp B                 &mo 2              &kp DEL                 &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&mo 7  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 5 JP_HANZEN  &lt_to_layer_0 3 SPACE  &kp BACKSPACE                             &mo 1
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &mt LEFT_SHIFT SPACE  &lt_to_layer_0 5 JP_HANZEN  &kp BACKSPACE  &lt LEFT_SHIFT SPACE  &mo 6
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -133,18 +133,18 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
-&kp JP_LPAREN  &kp JP_RPAREN  &kp JP_LBRACKET  &kp JP_RBRACKET  &trans  &trans      &trans  &trans  &trans  &trans  &kp F11  &kp F12
-&kp JP_LBRACKET  &kp JP_RBRACKET  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp JP_PLUS  &kp N7  &kp N8  &kp N9  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp JP_ASTERISK  &kp MINUS  &kp N4  &kp N5  &kp N6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp JP_EQUAL  &kp N0  &kp N1  &kp N2  &kp N3  &trans
+&trans  &trans  &trans  &trans  &trans                      &kp JP_ASTERISK  &kp N7  &kp N8  &kp N9  &kp JP_PLUS  
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp JP_EQUAL     &kp N4  &kp N5  &kp N6  &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N0           &kp N1  &kp N2  &kp N3  &kp DOT
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
@@ -189,8 +189,8 @@
 
         SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp JP_BACKQUOTE  &kp JP_TILDE  &kp BACKSLASH  &kp JP_YEN  &kp JP_PIPE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp AT  &kp SEMICOLON  &kp JP_COLON  &kp JP_CARET  &kp JP_UNDERSCORE
+&kp JP_LBRACKET  &kp JP_RBRACKET  &trans  &trans  &trans                      &kp JP_BACKQUOTE  &kp JP_TILDE  &kp BACKSLASH  &kp JP_YEN  &kp JP_PIPE
+&kp JP_LPAREN  &kp JP_RPAREN  &kp JP_LBRACKET  &kp JP_RBRACKET  &trans  &trans      &trans  &kp JP_AT  &kp SEMICOLON  &kp JP_COLON  &kp JP_CARET  &kp JP_UNDERSCORE
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
