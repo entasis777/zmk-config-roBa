@@ -121,6 +121,7 @@
 
         default_layer {
             bindings = <
+            &led_on
 &kp Q  &kp W         &kp E         &kp R      &kp T                                                            &kp Y          &kp U  &lt 5 I    &kp O    &kp P
 &kp A  &kp S  &kp D  &kp F  &kp G  &kp LS(LG(S))   &kp INS  &kp H  &kp J  &kp K  &kp  L  &kp ENTER
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B                 &mo 1              &kp DEL                 &kp N          &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
