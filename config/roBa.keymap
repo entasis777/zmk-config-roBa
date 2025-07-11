@@ -186,6 +186,9 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &bt BT_CLR        &bt BT_CLR_ALL        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &trans
             >;
+            sensor-bindings = 
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         SYMBOL {
