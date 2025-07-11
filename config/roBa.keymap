@@ -116,6 +116,15 @@
         };
     };
 
+    // 通電時にインジケータLEDを常時ONにするためのBehavior。default_layerの先頭に&led_onを記述。
+    behaviors {
+        led_on: led-on {
+            compatible = "zmk,behavior-toggle-gpio";
+            gpio = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+            mode = "on";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
