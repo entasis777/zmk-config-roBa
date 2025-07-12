@@ -124,7 +124,7 @@
             compatible = "zmk,behavior-toggle-gpio";
             gpio = <&gpio0 13 GPIO_ACTIVE_HIGH>;
             mode = "on";
-            label = "POWER LED ON"
+            label = "POWER LED ON";
             #binding-cells = <0>;
         };
     };
