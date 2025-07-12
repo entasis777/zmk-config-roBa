@@ -60,14 +60,4 @@
     };
 };
 
-/ {
-    leds {
-        compatible = "gpio-leds";
-        led0: led_0 {
-            gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; // GPIO番号は使用するピンに合わせて変更
-            label = "Power LED";
-            status = "okay";
-            #gpio-cells = <2>;
-        };
-    };
-};
+
