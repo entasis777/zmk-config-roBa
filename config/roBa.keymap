@@ -120,7 +120,7 @@
     behaviors {
         led_on: led-on {
             compatible = "zmk,behavior-toggle-gpio";
-            gpio = <&led0 0 GPIO_ACTIVE_HIGH>;
+            gpio = <&gpio0 13 GPIO_ACTIVE_HIGH>;
             mode = "on";
         };
     };
