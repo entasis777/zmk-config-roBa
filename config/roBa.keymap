@@ -92,12 +92,6 @@
             label = "TO_LAYER_0";
         };
 
-        led_trigger: led-trigger {
-            compatible = "zmk,behavior-macro";
-            bindings = <&led_on>;
-            #binding-cells = <0>;
-            label = "LED ON";
-        };
     };
 
     behaviors {
@@ -125,7 +119,7 @@
             compatible = "zmk,behavior-toggle-gpio";
             gpio = <&gpio0 13 GPIO_ACTIVE_HIGH>;
             mode = "on";
-            label = "POWER LED ON";
+            label = "POWER_LED_ON";
             #binding-cells = <0>;
         };
     };
