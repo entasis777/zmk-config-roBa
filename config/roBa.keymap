@@ -98,8 +98,8 @@
         };
     }
 
-    // スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
     behaviors {
+        // スクロール方向を逆にしたい場合は <&msc SCRL_DOWN> と <&msc SCRL_UP> を入れ替えてください
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
@@ -108,9 +108,7 @@
 
             tap-ms = <20>;
         };
-    };
 
-    behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -119,10 +117,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-    };
 
-    // 通電時にインジケータLEDを常時ONにするためのBehavior。default_layerの先頭に&led_onを記述。
-    behaviors {
+        // 通電時にインジケータLEDを常時ONにするためのBehavior。default_layerの先頭に&led_onを記述。
         led_on: led-on {
             compatible = "zmk,behavior-toggle-gpio";
             gpio = <&gpio0 13 GPIO_ACTIVE_HIGH>;
