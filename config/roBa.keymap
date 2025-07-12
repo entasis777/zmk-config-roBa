@@ -122,6 +122,7 @@
             compatible = "zmk,behavior-toggle-gpio";
             gpio = <&gpio0 13 GPIO_ACTIVE_HIGH>;
             mode = "on";
+            #binding-cells = <0>;
         };
     };
 
