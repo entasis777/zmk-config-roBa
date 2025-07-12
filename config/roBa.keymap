@@ -96,6 +96,7 @@
             compatible = "zmk,behavior-macro";
             bindings = <&led_on>;
             #binding-cells = <0>;
+            label = "LED ON";
         };
     };
 
