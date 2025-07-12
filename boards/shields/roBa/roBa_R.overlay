@@ -67,7 +67,7 @@
             gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; // GPIO番号は使用するピンに合わせて変更
             label = "Power LED";
             status = "okay";
-            #gpio-cells = <0>;
+            #gpio-cells = <2>;
         };
     };
 };
