@@ -95,6 +95,7 @@
         led_trigger: led-trigger {
             compatible = "zmk,behavior-macro";
             bindings = <&led_on>;
+            #binding-cells = <0>;
         };
     };
 
